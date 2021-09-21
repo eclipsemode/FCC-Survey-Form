@@ -20,16 +20,18 @@
             <form id="survey-form">
                 <div class="servey-form__group">
                     <label class="name-label" for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" class="form-group" required>
+                    <input type="text" name="name" id="name-label" placeholder="Enter your name" class="form-group"
+                        required>
                 </div>
                 <div class="servey-form__group">
                     <label class="email-label" for="email">Email</label>
-                    <input type="text" name="email" id="email" placeholder="Enter your Email" class="form-group"
+                    <input type="text" name="email" id="email-label" placeholder="Enter your Email" class="form-group"
                         required>
                 </div>
                 <div class="servey-form__group">
                     <label class="age-label" for="name">Age <span class="label-second">(optional)</span></label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" class="form-group" required>
+                    <input type="number" name="name" id="number-label" placeholder="Enter your name" class="form-group"
+                        required>
                 </div>
                 <div class="servey-form__group">
                     <p class="option-role">Which option best describes your current role?</p>
@@ -109,7 +111,14 @@
                             class="choise">Additional Courses</span>
                     </label>
                 </div>
-
+                <div class="servey-form__group">
+                    <p class="option-role">Any comments or suggestions?</p>
+                    <textarea name="textarea" type="textarea" placeholder="Enter your comment here..."
+                        class="textarea__end"></textarea>
+                </div>
+                <div class="servey-form__group">
+                    <button type="submit" value="Submit" class="submit__btn">Submit</button>
+                </div>
             </form>
         </main>
     </div>

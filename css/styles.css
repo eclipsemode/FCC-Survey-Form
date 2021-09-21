@@ -42,6 +42,7 @@ body::before {
 .main {
     max-width: 720px;
 }
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -74,7 +75,7 @@ body::before {
 }
 label {
     font-size: 1.125rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     position: relative;
@@ -98,11 +99,38 @@ label {
 }
 .choise {
     position: absolute;
-    top: -2px;
-    left: 25px;
+    top: -5px;
+    left: 35px;
 }
 .label-second {
     font-size: 0.9rem;
     color: #e4e4e4;
     margin-left: 0.25rem;
+}
+.textarea__end {
+    width: 100%;
+    min-height: 120px;
+    padding: 0.625rem;
+    resize: vertical;
+    font-size: inherit;
+    font-family: inherit;
+}
+.submit__btn {
+    display: block;
+    width: 100%;
+    background: var(--color-green);
+    border-radius: 2px;
+    padding: 0.75rem;
+    color: inherit;
+    border-style: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    padding: 10px;
 }
