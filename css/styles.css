@@ -17,7 +17,7 @@ body {
     margin: 0;
     font-family: "Poppins", sans-serif;
     line-height: 1.4;
-    font-size: 1rem;
+    font-size: 1.125rem;
     color: var(--color-white);
 }
 body::before {
@@ -27,7 +27,7 @@ body::before {
     left: 0;
     height: 100%;
     width: 100%;
-    background: var(--color-darkblue);
+
     background: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)),
         url(../img/survey-form-background.jpeg);
     background-size: cover;
@@ -38,18 +38,71 @@ body::before {
 .container {
     text-align: center;
     margin: 0 auto;
-    min-width: fit-content;
 }
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
+.main {
+    max-width: 720px;
 }
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
     }
 }
-.header__discription {
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+#title {
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+#description {
     font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1.75rem;
+    font-size: 1.125rem;
+}
+
+/* Survey form */
+
+#survey-form {
+    background: var(--color-darkblue-alpha);
+    border-radius: 0.25rem;
+    padding: 40px;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.servey-form__group {
+    text-align: left;
+    margin: 0 auto 2rem auto;
+}
+.form-group {
+    display: block;
+    width: 100%;
+    background: #fff;
+    color: #495057;
+    height: 2.375rem;
+    margin-bottom: 1.25rem;
+    padding: 0.25rem;
+    margin: 0 auto 1.25rem auto;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: inherit;
+}
+.choise {
+    position: absolute;
+    top: -2px;
+    left: 25px;
+}
+.label-second {
+    font-size: 0.9rem;
+    color: #e4e4e4;
+    margin-left: 0.25rem;
 }
